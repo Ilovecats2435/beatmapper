@@ -8,6 +8,15 @@ import navigation from "./navigation.slice";
 import songs from "./songs.slice";
 import user from "./user.slice";
 import waveform from "./visualizer.slice";
+import arcs from "./features/entities/arc.slice";
+import chains from "./features/entities/chain.slice";
+
+export const store = configureStore({
+  reducer: {
+    // existing reducers...
+    arcs,
+    chains,
+  });
 
 const reducer = combineReducers({
 	songs: songs.reducer,
