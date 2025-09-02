@@ -1,3 +1,6 @@
+import ArcComposition from "../../compositions/ArcComposition";
+import ChainComposition from "../../compositions/ChainComposition";
+
 import type { ReactNode } from "react";
 
 import type { IGrid } from "$/types";
